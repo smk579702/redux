@@ -11,18 +11,22 @@
     "react-dom": "^16.8.6",
     "react-redux": "^7.0.2",
     "redux": "^4.0.1",
-    "redux-undo": "^0.6.1"
+    "redux-undo": "^0.6.1",
+    "snyk": "^1.316.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "test": "react-scripts test --env=node --passWithNoTests"
+    "test": "react-scripts test --env=node --passWithNoTests",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "snyk": true
 }
